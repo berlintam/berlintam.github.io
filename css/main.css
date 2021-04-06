@@ -1,0 +1,33 @@
+* {
+  font-family: 'Courier New, monospace';
+}
+
+body {
+  background-color: #ededed;
+}
+
+a, a:active {
+  text-decoration: none;
+  color: #ff7070;
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 80%;
+}
+
+.row {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.custom-paragraph {
+  line-height: 30px;
+  background-color: white;
+  padding: 60px;
+  font-size: larger;
+  margin-top: 60px;
+  width: 100%;
+}
