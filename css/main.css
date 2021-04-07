@@ -1,5 +1,5 @@
 * {
-  font-family: 'Courier New, monospace';
+  font-family: 'Courier New', monospace;
 }
 
 body {
@@ -27,7 +27,12 @@ a, a:active {
   line-height: 30px;
   background-color: white;
   padding: 60px;
-  font-size: larger;
+  font-size: x-large;
   margin-top: 60px;
   width: 100%;
+}
+
+footer {
+  text-align: center;
+  margin: 40px 40px;
 }
