@@ -40,3 +40,7 @@ footer {
 p.email {
   color: #ff7070;
 }
+
+p.small {
+  font-size: small;
+}
