@@ -43,4 +43,5 @@ p.email {
 
 p.small {
   font-size: small;
+  line-height: 20px;
 }
