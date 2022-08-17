@@ -40,11 +40,13 @@ h4 {
   margin-top: auto;
 }
 
-.image-section {
-  float: left;
-  padding-right: 5%;
-  padding-bottom: 1%;
-  width: 25%;
+@media (min-width:1025px) {
+  .image-section {
+    float: left;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    width: 25%;
+  }
 }
 
 .image-section .me {
@@ -54,6 +56,13 @@ h4 {
 .image-section .credit {
   font-size: x-small;
 }
+
+@media (max-width:1024px) {
+  .image-section {
+    display: none;
+  }
+}
+
 
 footer {
   text-align: center;
