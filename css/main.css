@@ -25,11 +25,34 @@ a, a:active {
 
 .custom-paragraph {
   line-height: 30px;
+  font-size: x-large;
   background-color: white;
   padding: 60px;
-  font-size: x-large;
   margin-top: 60px;
   width: 100%;
+}
+
+.bio {
+  text-align: justify;
+}
+
+h4 {
+  margin-top: auto;
+}
+
+.image-section {
+  float: left;
+  padding-right: 5%;
+  padding-bottom: 1%;
+  width: 25%;
+}
+
+.image-section .me {
+  width: 100%;
+}
+
+.image-section .credit {
+  font-size: x-small;
 }
 
 footer {
