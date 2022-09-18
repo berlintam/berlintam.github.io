@@ -1,5 +1,6 @@
 * {
   font-family: 'Courier New', monospace;
+  --accentColor: #fa6262;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
 
 a, a:active {
   text-decoration: none;
-  color: #fa6262;
+  color: var(--accentColor);
 }
 
 .grid {
@@ -43,9 +44,8 @@ h4 {
 @media (min-width:1025px) {
   .image-section {
     float: left;
-    padding-right: 5%;
+    padding-right: 60px;
     padding-bottom: 1%;
-    width: 25%;
   }
 }
 
@@ -63,14 +63,13 @@ h4 {
   }
 }
 
-
 footer {
   text-align: center;
   margin: 40px 40px;
 }
 
 p.email {
-  color: #fa6262;
+  color: var(--accentColor);
 }
 
 p.small {
