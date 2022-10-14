@@ -16,15 +16,20 @@ a {
   text-decoration-color: var(--accentColor);
 }
 
+a:hover {
+  color: var(--accentColor);
+}
+
 @media (max-width:1024px) {
   a {
     color: var(--mobileAccentColor);
     text-decoration-color: var(--mobileAccentColor);
   }
-}
 
-a:hover {
-  color: var(--accentColor);
+  a:hover {
+    color: black;
+    text-decoration-color: black;
+  }
 }
 
 .grid {
