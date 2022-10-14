@@ -1,14 +1,29 @@
 * {
   font-family: 'Courier New', monospace;
-  --accentColor: #fa6262;
+  --accentColor: #c5c879;
+  --mobileAccentColor: #fa6262
 }
 
 body {
   background-color: #ededed;
 }
 
-a, a:active {
-  text-decoration: none;
+a {
+  color: #463f3f;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--accentColor);
+}
+
+@media (max-width:1024px) {
+  a {
+    color: var(--mobileAccentColor);
+    text-decoration-color: var(--mobileAccentColor);
+  }
+}
+
+a:hover {
   color: var(--accentColor);
 }
 
@@ -20,21 +35,32 @@ a, a:active {
   grid-gap: 60px;
 }
 
+@media (max-width:1024px) {
+  .grid {
+    width: 100%;
+    margin: 0px;
+    grid-gap: 150px;
+  }
+}
+
 .row {
   width: 100%;
   display: flex;
 }
 
 .custom-paragraph {
-  line-height: 30px;
+  line-height: 35px;
   font-size: x-large;
   background-color: white;
   padding: 60px;
   width: 100%;
 }
 
-.bio {
-  text-align: justify;
+@media (max-width:1024px) {
+  .custom-paragraph {
+    line-height: 70px;
+    font-size: 50px;
+  }
 }
 
 h4 {
@@ -49,6 +75,12 @@ h4 {
   }
 }
 
+@media (max-width:1024px) {
+  .image-section {
+    display: none;
+  }
+}
+
 .image-section .me {
   width: 100%;
 }
@@ -57,9 +89,15 @@ h4 {
   font-size: small;
 }
 
+p.small {
+  font-size: small;
+  line-height: 20px;
+}
+
 @media (max-width:1024px) {
-  .image-section {
-    display: none;
+  p.small {
+    font-size: xx-large;
+    line-height: 40px;
   }
 }
 
@@ -68,11 +106,8 @@ footer {
   margin: 40px 40px;
 }
 
-p.email {
-  color: var(--accentColor);
-}
-
-p.small {
-  font-size: small;
-  line-height: 20px;
+@media (max-width:1024px) {
+  footer {
+    margin-top: 130px;
+  }
 }
