@@ -15,6 +15,12 @@ a {
   text-decoration-color: var(--accentColor);
 }
 
+@media (max-width:1024px) {
+  a {
+    text-decoration-thickness: 10px;
+  }
+}
+
 a:hover {
   color: var(--accentColor);
 }
