@@ -17,7 +17,7 @@ a {
 
 @media (max-width:1024px) {
   a {
-    text-decoration-thickness: 10px;
+    text-decoration-thickness: 5px;
   }
 }
 
@@ -37,7 +37,6 @@ a:hover {
   .grid {
     width: 100%;
     margin: 0px;
-    grid-gap: 150px;
   }
 }
 
@@ -56,8 +55,8 @@ a:hover {
 
 @media (max-width:1024px) {
   .custom-paragraph {
-    line-height: 70px;
-    font-size: 50px;
+    line-height: 40px;
+    font-size: 30px;
   }
 }
 
@@ -65,18 +64,10 @@ h4 {
   margin-top: auto;
 }
 
-@media (min-width:1025px) {
-  .image-section {
-    float: left;
-    padding-right: 60px;
-    padding-bottom: 1%;
-  }
-}
-
-@media (max-width:1024px) {
-  .image-section {
-    display: none;
-  }
+.image-section {
+  float: left;
+  padding-right: 60px;
+  padding-bottom: 1%;
 }
 
 .image-section .me {
@@ -84,18 +75,25 @@ h4 {
 }
 
 .image-section .credit {
-  font-size: small;
+  font-size: medium;
+  line-height: 15px;
 }
 
-p.small {
-  font-size: small;
+@media (max-width:1024px) {
+  .image-section .credit {
+    line-height: 10px;
+  }
+}
+
+p.medium {
+  font-size: medium;
   line-height: 20px;
 }
 
 @media (max-width:1024px) {
-  p.small {
-    font-size: xx-large;
-    line-height: 40px;
+  p.medium {
+    font-size: medium;
+    line-height: 10px;
   }
 }
 
