@@ -1,11 +1,11 @@
 * {
   font-family: 'Courier New', monospace;
-  --accentColor: #6e9465;
-  color: white;
+  --accentColor: #ffb6c1;
+  color: black;
 }
 
 body {
-  background-color: #211d1d;
+  background-color: white;
 }
 
 a {
@@ -22,7 +22,8 @@ a {
 }
 
 a:hover {
-  color: var(--accentColor);
+  color:  var(--accentColor);
+  text-decoration-color: black;
 }
 
 .grid {
@@ -30,7 +31,6 @@ a:hover {
   max-width: 1200px;
   width: 80%;
   display: grid;
-  grid-gap: 60px;
 }
 
 @media (max-width:1024px) {
@@ -51,8 +51,7 @@ a:hover {
   font-size: x-large;
   padding: 60px;
   width: 100%;
-  border-style: solid;
-  border-width: 4px;
+  border-bottom: 2px solid;
 }
 
 @media (max-width:1024px) {
